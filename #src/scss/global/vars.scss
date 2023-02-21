@@ -1,0 +1,8 @@
+:root {
+    --text: #393939;
+    --violet: #5C437A;
+}
+
+@mixin def-anim {
+    transition: all .3s ease;
+}
