@@ -1,4 +1,4 @@
-import Swiper, {Pagination, Navigation} from 'swiper';
+import Swiper, {Pagination, Navigation, Autoplay} from 'swiper';
 
 const heroSlider = () => {
     const el = document.querySelector('.hero__slider');
@@ -6,7 +6,7 @@ const heroSlider = () => {
     if(el) {
         const slider = new Swiper(el, {
             slidesPerView: 1,
-            modules: [Navigation, Pagination],
+            modules: [Navigation, Pagination, Autoplay],
             navigation: {
                 prevEl: '.hero__slider_nav-prev',
                 nextEl: '.hero__slider_nav-next',
@@ -17,7 +17,11 @@ const heroSlider = () => {
                 bulletClass: 'hero__slider_pag_item',
                 clickable: true,
                 bulletActiveClass: 'active'
-            }
+            },
+            autoplay: {
+                delay: 3000
+            },
+            loop: true
         })
     }
 }

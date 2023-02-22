@@ -102,6 +102,9 @@
                 padding: 0 66px;
                 opacity: 0;
                 animation: hide .3s ease forwards;
+                max-width: 720px;
+                width: 100%;
+                
             }
 
 
@@ -121,6 +124,21 @@
                 padding: 0 10px;
                 color: #D80E0E;
                 margin-bottom: 20px;
+                position: relative;
+                padding-left: 25px;
+                
+                &:after {
+                    position: absolute;
+                    width: 12px;
+                    height: 12px;
+                    background-image: url('../img/promo-icon.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    content: '';
+                    left: 10px;
+                    top: calc(50% - 6px);
+                }
             }
 
             &_title {
