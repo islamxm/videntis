@@ -35,4 +35,46 @@
             display: flex;
         }
     }
+
+    &__action {
+        display: none;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .def {
+
+
+        &__in {
+            flex-wrap: wrap;
+        }
+
+        
+
+        &__img {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
+        &__main {
+            width: 100%;
+            margin-bottom: 40px;
+            &_title {
+                margin-bottom: 20px;
+            }
+            &_text {
+                margin-bottom: 0;
+            }
+            &_action {
+                display: none;
+            }
+        }
+        &__action {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+    }
 }

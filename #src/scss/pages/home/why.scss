@@ -17,7 +17,7 @@
 
     &__item {
         margin: 0 25px;
-        margin-bottom: 25px;
+        margin-bottom: 50px;
         width: calc((100% / 3) - 50px);
         padding-left: 55px;
         position: relative;
@@ -48,6 +48,30 @@
 
         &_body {
             
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .why {
+
+        &__body {
+
+        }
+
+        &__item {
+            width: calc((100% / 2) - 50px);
+           
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .why {
+
+        &__item {
+            width: calc(100% - 50px);
+            margin-bottom: 32px;
         }
     }
 }

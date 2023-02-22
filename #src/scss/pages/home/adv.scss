@@ -57,3 +57,39 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+    .adv {
+
+        &__body {
+            
+            &_item {
+                width: calc((100% / 3) - 24px);
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .adv {
+
+        &__body {
+
+            &_item {
+                width: calc((100% / 2) - 24px);
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .adv {
+
+        &__body {
+
+            &_item {
+                width: calc(100% - 24px);
+            }
+        }
+    }
+}

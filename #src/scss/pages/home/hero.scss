@@ -196,3 +196,37 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .hero {
+
+        &__slider {
+
+            &_sl {
+
+                &_in {
+                    align-items: center;
+                    max-width: unset;
+                    padding: 0;
+                }
+
+                &_title {
+                    font-weight: 600;
+                    font-size: 35px;
+                    line-height: 45px;
+                    text-align: center;
+                }
+
+                &_text {
+                    text-align: center;
+                    font-size: 14px;
+                    margin-bottom: 30px;
+                }
+            }
+
+            &_nav {
+                display: none;
+            }
+        }
+    }
+}

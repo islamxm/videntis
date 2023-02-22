@@ -121,3 +121,24 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .map {
+
+        &__body {   
+            height: unset;
+
+            &_el {
+                height: 400px;
+                
+            }
+
+            &_info {
+                position: static;
+                width: 100%;
+                margin-bottom: 20px;
+                box-shadow: none;
+            }
+        }
+    }
+}
