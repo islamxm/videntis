@@ -36,3 +36,14 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 }
+
+.block-title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+    color: var(--violet);
+}
+
+.block-title.center {
+    text-align: center;
+}

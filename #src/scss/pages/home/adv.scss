@@ -1,0 +1,59 @@
+.adv {
+
+
+    &__in {
+        padding: 50px 0;
+    }
+
+    &__title {
+        margin-bottom: 50px;
+    }
+
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -12px;
+        margin-right: -12px;
+        justify-content: center;
+
+        &_item {
+            margin: 0 12px;
+            width: calc((100% / 4) - 24px);
+            margin-bottom: 25px;
+            min-height: 207px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.7);
+            border: 1px solid rgba(140, 118, 168, 0.25);
+            border-radius: 5px;
+            @include def-anim;
+            padding: 25px 10px;
+            cursor: pointer;
+
+            &:hover {
+                filter: drop-shadow(0 0 10px var(--violet));
+            }
+
+            &_icon {
+                width: 35px;
+                height: 35px;
+                margin-bottom: 15px;
+
+                img {
+                    width: 100%;    
+                    height: 100%;
+                    object-fit: contain;
+                    display: flex;
+                }
+            }
+
+            &_text {
+                text-align: center;
+                font-size: 18px;
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,123 @@
+.map {
+
+    &__in {
+        padding: 50px 0;
+    }
+
+    &__body {
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+        height: 430px;
+
+        &_info {
+            position: absolute;
+            bottom: 40px;
+            left: 40px;
+            width: 300px;
+            min-height: 100px;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0px 4px 20px rgba(92, 67, 122, 0.2);
+            border-radius: 12px;
+            padding: 25px 30px;
+
+            &_adrs {
+                margin-bottom: 10px;
+
+                ul {
+                    li {
+                        list-style: none;
+                        position: relative;
+                        padding-left: 22px;
+                        font-size: 14px;
+
+                        &:after {
+                            position: absolute;
+                            top: calc(50% - 5px);
+                            left: 0;
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 100%;
+                            background-color: red;
+                            content: '';
+                        }
+                    }
+                }
+            }
+
+            &_tel {
+                a {
+                    position: relative;
+                    padding-left: 20px;
+                    font-size: 14px;
+                    font-weight: 600;
+
+                    &:after {
+                        position: absolute;
+                        content: '';
+                        background-image: url('../img/tel.svg');
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: contain;
+                        width: 14px;
+                        height: 14px;
+                        top: calc(50% - 7px);
+                        left: 0;
+                    }
+                }
+            }
+
+            &_tm {
+                position: relative;
+                    padding-left: 20px;
+                    font-size: 14px;
+                    font-weight: 600;
+                margin-bottom: 11px;
+                    &:after {
+                        position: absolute;
+                        content: '';
+                        background-image: url('../img/time.svg');
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: contain;
+                        width: 14px;
+                        height: 14px;
+                        top: calc(50% - 7px);
+                        left: 0;
+                    }
+            }
+
+            &_action {
+                button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    padding: 8px 10px;
+                    background: #FFFFFF;
+                    border: 1px solid rgba(92, 67, 122, 0.21);
+                    border-radius: 4px;
+                    @include def-anim;
+                    cursor: pointer;
+                    width: 100%;
+                    font-size: 12px;
+                    line-height: 15px;
+                    &:hover {
+                        background-color: var(--violet);
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        &_el {
+            width: 100%;
+            height: 100%;
+
+            iframe {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

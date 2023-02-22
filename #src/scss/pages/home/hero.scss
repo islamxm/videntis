@@ -6,8 +6,54 @@
 
     &__slider {
 
+
+        &_pag {
+            position: absolute;
+            bottom: 40px !important;
+            left: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 20;
+            &_item {    
+                width: 15px;
+                height: 15px;
+                border-radius: 100%;
+                background-color: #fff;
+                border: 1px solid #B8B8B8;
+                @include def-anim;
+                margin: 0 5px;
+                flex: 0 0 auto;
+                display: block;
+                cursor: pointer;
+
+            }
+            &_item.active {
+                background-color: #8C76A8;
+                border-color: #8C76A8;
+                transform: scale(1.1);
+            }
+        }
+
         &_wr {
 
+        }
+
+        &_sl.swiper-slide-active {
+
+            .hero__slider_sl_in {
+                animation: slide 1s ease .7s forwards;
+            }
+        }
+
+        @keyframes slide {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
         }
 
         &_sl {
@@ -52,10 +98,16 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: flex-start;
-                // max-width: 588px;
                 width: 100%;
                 padding: 0 66px;
+                opacity: 0;
+                animation: hide .3s ease forwards;
+            }
 
+
+            @keyframes hide {
+                0% {opacity: 1;}
+                100% {opacity: 0;}
             }
 
             &_promo {
@@ -119,6 +171,10 @@
         &_nav.hero__slider_nav-next {
             right: 10px;
             transform: rotate(180deg);
+
+            &:active {
+                transform: scale(0.95) rotate(180deg);
+            }
         }
     }
 }
