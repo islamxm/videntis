@@ -1,0 +1,16 @@
+.aboutRec {
+    background: linear-gradient(294.59deg, rgba(191, 112, 50, 0.112) -77.79%, rgba(225, 201, 255, 0.084) 50.2%);
+    border: 1px solid rgba(140, 118, 168, 0.2);
+
+    &__in {
+        padding: 50px 0;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    &__body {
+        line-height: 35px;
+    }
+}
