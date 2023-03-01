@@ -992,6 +992,11 @@ body {
     display: none;
   }
 }
+@media (max-width: 520px) {
+  .hero__slider_sl_title {
+    font-size: 30px;
+  }
+}
 .why__in {
   padding: 70px 0;
 }
@@ -1174,6 +1179,11 @@ body {
   text-decoration-line: line-through;
   margin-left: 20px;
 }
+.prom__item_action {
+  position: relative;
+  z-index: 2;
+  margin-top: 30px;
+}
 
 @media (max-width: 1024px) {
   .prom__item {
@@ -1186,6 +1196,15 @@ body {
     font-size: 25px;
     line-height: 40px;
     margin-bottom: 15px;
+  }
+}
+@media (max-width: 520px) {
+  .prom__item_prices span {
+    display: block;
+    margin: 0;
+  }
+  .prom__item_action .button {
+    width: 100%;
   }
 }
 .adv__in {

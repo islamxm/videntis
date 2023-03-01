@@ -230,3 +230,17 @@
         }
     }
 }
+
+@media (max-width: 520px) {
+    .hero {
+
+        &__slider {
+            &_sl {
+
+                &_title {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
