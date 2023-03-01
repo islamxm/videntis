@@ -75,3 +75,16 @@
         }
     }
 }
+
+@media (max-width: 520px) {
+    .why {
+
+        &__item {
+
+            &_head {
+                font-size: 17px;
+                line-height: 22px;
+            }
+        }
+    }
+}

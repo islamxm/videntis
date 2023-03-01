@@ -165,3 +165,20 @@
         }
     }
 }
+
+@media (max-width: 520px) {
+    .serv {
+
+        &__item {
+
+            &_body {
+
+                ul {
+                    li {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
